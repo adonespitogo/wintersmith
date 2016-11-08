@@ -64,7 +64,7 @@ parseMarkdownSync = (content, markdown, baseUrl, options) ->
 module.exports = (env, callback) ->
   # Highlight.js configuration
   hljsConfigDefaults =
-    classPrefix: ''
+    classPrefix: 'hljs-'
 
   hljsConfig = env.config.highlightjs or {}
   for key, value of hljsConfigDefaults
